@@ -14,6 +14,7 @@ RUN echo "listen_addresses='*'" >> /etc/postgresql/9.3/main/postgresql.conf
 RUN sed -i 's/peer/trust/g' /etc/postgresql/9.3/main/pg_hba.conf
 RUN sed -i 's/\/var\/lib\/postgresql\/9.3\/main/\/srv\/data/g' /etc/postgresql/9.3/main/postgresql.conf
 RUN echo "host all all 0.0.0.0/0 md5" >> /etc/postgresql/9.3/main/pg_hba.conf
+
 # So why the fuck I need to put the command in the a script
 # and call it from ENTRYPOINT command, I still haven't know
 ADD start.sh .
