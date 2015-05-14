@@ -4,7 +4,7 @@ run `$(boot2docker shellinit 2> /dev/null)`
 Also put `$(boot2docker shellinit 2> /dev/null)` the bottom of your `~/.bash_profile`
 
 ## For persistent data
-`mkdir <some_place_to_store_data`
+`mkdir <some_place_to_store_data>`
 
 ## Commands
 
