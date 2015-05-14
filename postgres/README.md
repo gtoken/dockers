@@ -1,5 +1,6 @@
 ## For boot2docker on MAC
 run `$(boot2docker shellinit 2> /dev/null)`
+
 Also put `$(boot2docker shellinit 2> /dev/null)` the bottom of your `~/.bash_profile`
 
 ## For persistent data
