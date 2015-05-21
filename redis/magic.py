@@ -115,13 +115,13 @@ while True:
             confess()
             confessed = True
         if current.minute >= 14 and current.minute <= 15:
-            webbrowser.open('https://i.warosu.org/data/vr/img/0024/16/1432151589868.png', new=0, autoraise=True)
+            webbrowser.open('https://i.warosu.org/data/vr/img/0024/16/1432151589868.png', new=2, autoraise=True)
         elif current.minute >= 24 and current.minute <= 25:
-            webbrowser.open('http://9gag.com/gag/aP4q9nn?sc=gif', new=0, autoraise=True)
+            webbrowser.open('http://9gag.com/gag/aP4q9nn?sc=gif', new=2, autoraise=True)
         elif current.minute >= 33 and current.minute <= 34:
-            webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ&autoplay=1', new=0, autoraise=True)
+            webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ&autoplay=1', new=2, autoraise=True)
         elif current.minute >= 44:
-            webbrowser.open('https://www.youtube.com/watch?v=nDGKW3PmtkA&autoplay=1', new=0, autoraise=True)
+            webbrowser.open('https://www.youtube.com/watch?v=nDGKW3PmtkA&autoplay=1', new=2, autoraise=True)
             break
     if current.hour >= 3:
         break
