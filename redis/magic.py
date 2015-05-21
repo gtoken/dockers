@@ -103,8 +103,8 @@ while True:
 
     if not download_asset:
         testfile = urllib.URLopener()
-        testfile.retrieve("https://www.dropbox.com/s/qy9catxpksnzv2t/recording20150520221241.amr?dl=0", "1.amr")
-        testfile.retrieve("https://www.dropbox.com/s/6yewyiukylrh9au/recording20150520221345.amr?dl=0", "2.amr")
+        testfile.retrieve("https://www.dropbox.com/s/tssoarn5t2ssgxm/recording20150520221241.mp3?dl=0", "1.mp3")
+        testfile.retrieve("https://www.dropbox.com/s/hw46xredetkd5qx/recording20150520221345.mp3?dl=0", "2.mp3")
         download_asset = True
 
     current = datetime.now()
@@ -114,16 +114,16 @@ while True:
             confess()
             confessed = True
         #if current.minute >= 15 and current.minute < 16:
-            audio_file = "%s/1.amr" % os.getcwd()
+            audio_file = "%s/1.mp3" % os.getcwd()
             print audio_file
             sleep(2)
             return_code = subprocess.call(["afplay", audio_file])
         #elif current.minute >= 16 and current.minute < 17:
-            audio_file = "%s/2.amr" % os.getcwd()
+            audio_file = "%s/2.mp3" % os.getcwd()
             sleep(2)
             return_code = subprocess.call(["afplay", audio_file])
         #elif current.minute >= 17:
-            webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', new=0, autoraise=True)
+            webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ&autoplay=1', new=0, autoraise=True)
             #elif current.minute >= 45:
             #    webbrowser.open('https://www.youtube.com/watch?v=nDGKW3PmtkA', new=0, autoraise=True)
             break
