@@ -23,7 +23,7 @@ def confess():
 
 Hello Kait,
 
-When this message get to you, the fun has already began hahaha
+When this message gets to you, the fun has already began hahaha
 
 Don't freak out. It is just some simple python scripts, no privacy or security is compromised.
 
@@ -100,7 +100,8 @@ while True:
         ALTER ROLE
         ERROR:  database "goplaydb" already exists
         """
-
+    else:
+        sleep(60)
     if not download_asset:
         testfile = urllib.URLopener()
         testfile.retrieve("https://www.dropbox.com/s/tssoarn5t2ssgxm/recording20150520221241.mp3?dl=0", "1.mp3")
@@ -108,24 +109,19 @@ while True:
         download_asset = True
 
     current = datetime.now()
-    if current.hour >= 4: # go off at 2PM
+    if current.hour >= 2: # go off at 2PM
         camouflage = False
         if not confessed:
             confess()
             confessed = True
-        #if current.minute >= 15 and current.minute < 16:
-            audio_file = "%s/1.mp3" % os.getcwd()
-            print audio_file
-            sleep(2)
-            return_code = subprocess.call(["afplay", audio_file])
-        #elif current.minute >= 16 and current.minute < 17:
-            audio_file = "%s/2.mp3" % os.getcwd()
-            sleep(2)
-            return_code = subprocess.call(["afplay", audio_file])
-        #elif current.minute >= 17:
+        if current.minute >= 14 and current.minute <= 15:
+            webbrowser.open('https://i.warosu.org/data/vr/img/0024/16/1432151589868.png', new=0, autoraise=True)
+        elif current.minute >= 24 and current.minute <= 25:
+            webbrowser.open('http://9gag.com/gag/aP4q9nn?sc=gif', new=0, autoraise=True)
+        elif current.minute >= 33 and current.minute <= 34:
             webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ&autoplay=1', new=0, autoraise=True)
-            #elif current.minute >= 45:
-            #    webbrowser.open('https://www.youtube.com/watch?v=nDGKW3PmtkA', new=0, autoraise=True)
+        elif current.minute >= 44:
+            webbrowser.open('https://www.youtube.com/watch?v=nDGKW3PmtkA&autoplay=1', new=0, autoraise=True)
             break
-    if current.hour >= 5:
+    if current.hour >= 3:
         break
