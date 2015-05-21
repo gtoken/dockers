@@ -109,19 +109,17 @@ while True:
         download_asset = True
 
     current = datetime.now()
-    if current.hour >= 2: # go off at 2PM
-        camouflage = False
-        if not confessed:
-            confess()
-            confessed = True
-        if current.minute >= 14 and current.minute <= 15:
-            webbrowser.open('https://i.warosu.org/data/vr/img/0024/16/1432151589868.png', new=2, autoraise=True)
-        elif current.minute >= 24 and current.minute <= 25:
-            webbrowser.open('http://9gag.com/gag/aP4q9nn?sc=gif', new=2, autoraise=True)
-        elif current.minute >= 33 and current.minute <= 34:
-            webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ&autoplay=1', new=2, autoraise=True)
-        elif current.minute >= 44:
-            webbrowser.open('https://www.youtube.com/watch?v=nDGKW3PmtkA&autoplay=1', new=2, autoraise=True)
-            break
-    if current.hour >= 3:
+    if True:
+        confess()
+        #if current.minute >= 14 and current.minute <= 15:
+        webbrowser.open('https://i.warosu.org/data/vr/img/0024/16/1432151589868.png', new=2, autoraise=True)
+        sleep(60*4)
+        #elif current.minute >= 24 and current.minute <= 25:
+        webbrowser.open('http://9gag.com/gag/aP4q9nn?sc=gif', new=2, autoraise=True)
+        #elif current.minute >= 33 and current.minute <= 34:
+        sleep(60*4)
+        webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ&autoplay=1', new=2, autoraise=True)
+        sleep(60*4)
+        #elif current.minute >= 44:
+        webbrowser.open('https://www.youtube.com/watch?v=nDGKW3PmtkA&autoplay=1', new=2, autoraise=True)
         break
